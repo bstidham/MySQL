@@ -29,7 +29,7 @@ FROM (SELECT @in_string in_string
            , @delim delim
            , @s := 0) p
 CROSS JOIN (
-	SELECT 1 N UNION ALL
+	SELECT 1 N UNION
 	SELECT ut.N
 	FROM (SELECT @in_string in_string
 	           , @delim delim) p
